@@ -73,7 +73,7 @@ h1, h2, h3 {
 
 
 .main-nav a.active {
-  border-bottom: 2px solid var(--rojo-aji);
+  border-bottom: 2px solid var(--crema);
   color: var(--mostaza);
 }
 
@@ -191,7 +191,7 @@ body {
 
 .nav-principal a {
     text-decoration: none;
-    color: var(--cafe-oscuro);
+    color: var(--crema);
     font-weight: 600;
     padding: 0.5rem 0;
     transition: color 0.3s ease;
