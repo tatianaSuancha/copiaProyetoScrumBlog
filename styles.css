@@ -406,7 +406,6 @@ body {
     }
 }
 
-/* Estilos para la sección Quiénes Somos */
 .quienes-somos-section {
     padding: 3rem 1.5rem;
     display: flex;
@@ -439,20 +438,46 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.btn-enviar {
-    background-color: var(--mostaza);
-    border-color: var(--mostaza);
-    color: var(--cafe-oscuro);
-    font-weight: bold;
+.quienes-somos-section {
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
-.btn-enviar:hover {
-    background-color: #c98c00;
-    border-color: #c98c00;
-    color: var(--cafe-oscuro);
+.quienes-somos-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
 }
 
-/* Ajustes para las Cards refactorizadas con Bootstrap */
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.valor-card {
+    background-color: var(--fondo-tarjeta);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-top: 4px solid var(--mostaza);
+    border-left: 1px solid rgba(62, 39, 35, 0.08);
+    border-right: 1px solid rgba(62, 39, 35, 0.08);
+    border-bottom: 1px solid rgba(62, 39, 35, 0.08);
+    box-shadow: var(--sombra-card);
+    transition: transform 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-4px);
+}
+
+.valor-card h3 {
+    color: var(--verde-cafe);
+    margin-bottom: 0.5rem;
+}
+
 .card-img-custom {
     height: 250px;
 }
@@ -471,4 +496,63 @@ body {
 
 .card-post-refactored:hover {
     transform: translateY(-4px);
+}
+
+
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+.card-img-top,
+img[src*="sebastian"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.bg-dark {
+  background-color: var(--cafe-oscuro) !important;
+}
+
+.navbar {
+  border-bottom: 3px solid var(--mostaza);
+}
+
+.navbar-brand {
+  font-family: 'Fraunces', serif;
+  color: var(--verde-cafe) !important;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: var(--cafe-oscuro) !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--rojo-aji) !important;
+}
+
+/* Ajustes de footer y selección de texto */
+footer a {
+  color: var(--mostaza) !important;
+}
+
+footer a:hover {
+  color: var(--crema) !important;
+  text-decoration: underline !important;
+}
+
+::selection {
+  background-color: var(--mostaza);
+  color: var(--cafe-oscuro);
 }
