@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las delicias colombianas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+</head>
+<body>
+   
+    
+    <header class="header-fijo">
+        <div class="logo-container">
+            <span class="logo-icon"></span>
+            <h1 class="logo-titulo">Las Delicias de Colombia</h1>
+        </div>
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>El Arte de la Comida Tipica Colombiana</h2>
+            <p>Descubre el sabor único nuestro país.</p>
+        </div>
+    </section>
+
+    <section class="buscador-seccion">
+        <div class="contenedor-buscador">
+            <input type="text" id="input-buscar" placeholder="Buscar plato">
+            <div class="botones-categoria">
+                <button class="btn-filtro active" data-categoria="todas">Todas</button>
+                <button class="btn-filtro" data-categoria="Platos fuertes">Platos fuertes</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="contenedor-main">
+        <h2 class="titulo-seccion">Publicaciones Destacadas</h2>
+
+        <article class="card-post" data-categoria="Platos fuertes">
+            <div class="card-imagen">
+                <img src="https://www.196flavors.com/wp-content/uploads/2021/06/bandeja-paisa-2fp.jpg" loading="lazy">
+            </div>
+            <div class="card-contenido">
+                <span class="badge">Bandeja paisa</span>
+                <h3>Bandeja paisa</h3>
+                <h4>Una leyenda de la gastronomía de Antioquia</h4>
+                <p>Uno de los platos más abundantes e icónicos del país.</p>
+                <p>Ingredientes clave: Frijoles rojos cocinados con garra de cerdo, arroz blanco, chicharrón crujiente, carne molida, huevo frito, tajada de plátano maduro, chorizo, morcilla, arepa blanca y aguacate.</p>
+            </div>
+        </article>
+
+        <article class="card-post" data-categoria="Platos fuertes">
+            <div class="card-imagen">
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/semana/GBBYJH5YMZC6PEINHE3HZZH4TY.jpg" loading="lazy">
+            </div>
+            <div class="card-contenido">
+                <span class="badge">Ajiaco Santafereño</span>
+                <h3>Ajiaco Santafereño</h3>
+                <h4>Una leyenda de la gastronomía de Cundinamarca y Bogotá</h4>
+                <p>Sopa espesa y reconfortante, tradicional de la zona andina central.</p>
+                <p>Ingredientes clave: Combinación de tres tipos de papa (criolla, sabanera y pastusa) que le dan su textura característica, pollo deshebrado, mazorca y guascas (hierba silvestre que le otorga su sabor distintivo). Se sirve acompañado de crema de leche, alcaparras y aguacate.</p>
+            </div>
+        </article>
+
+        <article class="card-post" data-categoria="Platos fuertes">
+            <div class="card-imagen">
+                <img src="https://s3.wasabisys.com/assets.elcronista.co/assets/media/dia-de-la-lechona-tolimense.jpg" loading="lazy">
+            </div>
+            <div class="card-contenido">
+                <span class="badge">Lechona Tolimense</span>
+                <h3>Lechona Tolimense</h3>
+                <h4>Una leyenda de la gastronomía del Tolima y Huila</h4>
+                <p>Cerdo entero sazonado y relleno, horneado lentamente durante varias horas en horno de barro hasta lograr una piel muy crujiente (crocante).</p>
+                <p>Ingredientes clave: Carne de cerdo, arveja amarilla y especias (en la receta tradicional tolimense no lleva arroz). Se sirve con arepa blanca o insulso.</p>
+            </div>
+        </article>
+
+        <article class="card-post" data-categoria="Platos fuertes">
+            <div class="card-imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaKAEPHLVfR3j897XQYUZfCOpBnlvmor3UxnFFCeqtkAM3SsL5fK3Ty08&s=10" loading="lazy">
+            </div>
+            <div class="card-contenido">
+                <span class="badge">Arepa de Huevo</span>
+                <h3>Arepa de Huevo</h3>
+                <h4>Una leyenda de la gastronomía de la Region Caribe</h4>
+                <p>Fritura icónica del Caribe colombiano.</p>
+                <p>Ingredientes clave: Masa de maíz amarillo frita a la que se le hace una ranura para introducir un huevo entero (y a veces carne molida), sellándola para volverla a freír hasta que quede crujiente por fuera.</p>
+            </div>
+        </article>
+
+        <article class="card-post" data-categoria="Platos fuertes">
+            <div class="card-imagen">
+                <img src="https://www.mycolombianrecipes.com/wp-content/uploads/2013/11/Three-Meats-Sancocho.jpg" loading="lazy">
+            </div>
+            <div class="card-contenido">
+                <span class="badge">Sancocho</span>
+                <h3>Sancocho</h3>
+                <h4>Nacional / Variantes en el Valle, Caribe y Pacífico</h4>
+                <p>Caldo espeso preparado tradicionalmente a la leña para reuniones familiares o "paseos de olla".</p>
+                <p>Ingredientes clave: Plátano verde, yuca, papa, mazorca y proteína (gallina criolla, res, trifásico o pescado). Se sirve con arroz, aguacate y un toque de limón.</p>
+            </div>
+        </article>
+    </main>
+     <footer>
+        <div class="piedDePagina" >
+            <p>Las delicias colombianas</p>
+
+             <p>Autores:Tatiana Perez,Samul Velez,Sebastian Cruz,Kevin Soto y Valeria Diaz </p>
+            <address>
+                Contacto:
+                <a class="gmail" href= "mailto:Lasdeliciascolombianas@colombia.com">Lasdeliciascolombianas@colombia.com</a>
+            </address>
+
+        </div>
+    </footer>    
+</body>
+</html>
