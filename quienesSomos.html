@@ -3,69 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Las Delicias Colombianas | Inicio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Las Delicias Colombianas | Quiénes Somos</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Fuentes Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-  <header class="encabezado">
-    <div class="nav-container">
-      <a href="index.html" class="logo">🌽 Las Delicias Colombianas</a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="main-nav" id="main-nav">
-        <a href="index.html">Inicio</a>
-        <a href="quienesSomos.html" class="active">Quiénes Somos</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </div>
+  <!-- Encabezado / Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🌽 Las Delicias Colombianas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="quienesSomos.html">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Sobre nosotros</h1>
-      <p>Somos un blog que se encarga de revisar y dar a conocer diferentes comida Colombianas que todos deberiamos probrar.</p>
+  <!-- Contenido principal -->
+  <main class="flex-grow-1">
+    
+    <!-- Hero Section -->
+    <section class="py-5 bg-light text-center">
+      <div class="container py-4">
+        <h1 class="display-4 fw-bold">Sobre nosotros</h1>
+        <p class="lead text-muted col-lg-8 mx-auto">
+          Somos un blog que se encarga de revisar y dar a conocer diferentes comidas colombianas que todos deberíamos probar.
+        </p>
+      </div>
     </section>
-    <!-- Sección de valores agregada por Kevin -->
-        <section class="quienes-somos-section">
-            <div class="quienes-somos-container">
-                <div class="quienes-somos-contenido">
-                    <p>
-                        Nuestra misión es compartir historias, recetas tradicionales y la cultura que 
-                        hace de la cocina colombiana un patrimonio lleno de sabor, color y diversidad.
-                    </p>
-                </div>
 
-                <div class="valores-grid">
-                    <div class="valor-card">
-                        <h3>Tradición</h3>
-                        <p>Honramos las recetas auténticas transmitidas de generación en generación.</p>
-                    </div>
-                    <div class="valor-card">
-                        <h3>Diversidad</h3>
-                        <p>Celebramos los ingredientes y sabores de todas las regiones de Colombia.</p>
-                    </div>
-                    <div class="valor-card">
-                        <h3>Comunidad</h3>
-                        <p>Unimos a los amantes de la buena comida en torno a la mesa colombiana.</p>
-                    </div>
-                </div>
+    <!-- Sección de Valores -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-lg-8 mx-auto">
+            <p class="fs-5">
+              Nuestra misión es compartir historias, recetas tradicionales y la cultura que 
+              hace de la cocina colombiana un patrimonio lleno de sabor, color y diversidad.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <div class="card-body">
+                <h3 class="card-title h4 fw-bold">Tradición</h3>
+                <p class="card-text text-secondary">Honramos las recetas auténticas transmitidas de generación en generación.</p>
+              </div>
             </div>
-        </section>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <div class="card-body">
+                <h3 class="card-title h4 fw-bold">Diversidad</h3>
+                <p class="card-text text-secondary">Celebramos los ingredientes y sabores de todas las regiones de Colombia.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <div class="card-body">
+                <h3 class="card-title h4 fw-bold">Comunidad</h3>
+                <p class="card-text text-secondary">Unimos a los amantes de la buena comida en torno a la mesa colombiana.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Autores / Nuestro Equipo -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Nuestro Equipo</h2>
+        
+        <!-- Rejilla de Bootstrap alineada al centro para las 5 tarjetas -->
+        <div class="row g-4 justify-content-center">
+          
+          <!-- Card 1: Tatiana Pérez -->
+          <div class="col-sm-6 col-md-4 col-lg-2-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="img/tatiana.jpg" class="card-img-top object-fit-cover" alt="Fotografía de Tatiana Pérez" style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-6">Tatiana Pérez</h5>
+                <p class="card-text small text-muted">Co-autora & Creadora de contenido</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Samuel Vélez -->
+          <div class="col-sm-6 col-md-4 col-lg-2-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="img/samuel.jpg" class="card-img-top object-fit-cover" alt="Fotografía de Samuel Vélez" style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-6">Samuel Vélez</h5>
+                <p class="card-text small text-muted">Co-autor & Investigador Gastronómico</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Kevin Soto -->
+          <div class="col-sm-6 col-md-4 col-lg-2-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="img/kein.jpg" class="card-img-top object-fit-cover" alt="Fotografía de Kevin Soto" style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-6">Kevin Soto</h5>
+                <p class="card-text small text-muted">Co-autor & Redactor</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Valeria Díaz -->
+          <div class="col-sm-6 col-md-4 col-lg-2-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="img/valeria.jpg" class="card-img-top object-fit-cover" alt="Fotografía de Valeria Díaz" style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-6">Valeria Díaz</h5>
+                <p class="card-text small text-muted">Co-autora & Fotógrafa</p>
+              </div>
+            </div>
+          </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+              <img src="img/sebastian.jpg" alt="Fotografía de Sebastián Cruz" style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-6">Sebastián Cruz</h5>
+                <p class="card-text small text-muted">Co-autor & Crítico de Comida</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="pie-pagina">
-    <p>Autores:Tatiana Perez,Samul Velez,Sebastian Cruz,Kevin Soto y Valeria Diaz</p>
-     <address>
-        Contacto:
-        <a class="gmail" href= "mailto:Lasdeliciascolombianas@colombia.com">Lasdeliciascolombianas@colombia.com</a>
-     </address>
-    <p>&copy; 2026 Las Delicias Colombianas</p>
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+      <p class="mb-1 text-white-50">Autores: Tatiana Pérez, Samuel Vélez, Sebastián Cruz, Kevin Soto y Valeria Díaz</p>
+      <address class="mb-2">
+        Contacto: 
+        <a class="text-warning text-decoration-none" href="mailto:Lasdeliciascolombianas@colombia.com">Lasdeliciascolombianas@colombia.com</a>
+      </address>
+      <p class="small text-white-50 mb-0">&copy; 2026 Las Delicias Colombianas</p>
+    </div>
   </footer>
 
-  <script src="menu.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>

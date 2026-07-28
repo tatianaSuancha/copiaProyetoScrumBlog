@@ -1,0 +1,144 @@
+/* ==========================================================================
+   1. VARIABLES Y CONFIGURACIÓN GLOBAL (:root)
+   ========================================================================== */
+:root {
+  /* Paleta de colores */
+  --crema: #FBF3E7;
+  --mostaza: #E3A008;
+  --rojo-aji: #B33A3A;
+  --verde-cafe: #3B5D3C;
+  --cafe-oscuro: #3E2723;
+
+  /* Aliases semánticos */
+  --bg-main: var(--crema);
+  --text-main: var(--cafe-oscuro);
+  --primary: var(--verde-cafe);
+  --secondary: var(--mostaza);
+  --accent: var(--rojo-aji);
+
+  /* Tipografías */
+  --font-titulos: 'Fraunces', serif;
+  --font-cuerpo: 'Nunito Sans', sans-serif;
+
+  /* UI & Efectos */
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+  --shadow-sm: 0 4px 6px rgba(62, 39, 35, 0.05);
+  --shadow-md: 0 8px 15px rgba(62, 39, 35, 0.1);
+}
+
+/* ==========================================================================
+   2. ESTILOS BASE & REEMPLAZOS BOOTSTRAP
+   ========================================================================== */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-cuerpo);
+  line-height: 1.6;
+}
+
+/* Tipografía de Encabezados con Fraunces */
+h1, h2, h3, h4, h5, h6, 
+.display-4, .navbar-brand {
+  font-family: var(--font-titulos);
+  color: var(--cafe-oscuro);
+}
+
+/* Sobrescribir colores de fondo de Bootstrap */
+.bg-light {
+  background-color: #FFFFFF !important;
+}
+
+.bg-dark {
+  background-color: var(--cafe-oscuro) !important;
+}
+
+/* ==========================================================================
+   3. NAVEGACIÓN (Navbar)
+   ========================================================================== */
+.navbar {
+  border-bottom: 3px solid var(--mostaza);
+  background-color: #FFFFFF !important;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  color: var(--verde-cafe) !important;
+}
+
+.nav-link {
+  font-family: var(--font-cuerpo);
+  font-weight: 600;
+  color: var(--cafe-oscuro) !important;
+  transition: var(--transition);
+}
+
+.nav-link:hover, 
+.nav-link.active {
+  color: var(--rojo-aji) !important;
+}
+
+/* ==========================================================================
+   4. TARJETAS (Cards & Equipo)
+   ========================================================================== */
+.card {
+  background-color: #FFFFFF;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  border: 1px solid rgba(62, 39, 35, 0.08) !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md) !important;
+}
+
+.card-title {
+  color: var(--verde-cafe);
+}
+
+/* Asegurar ajuste de imágenes de perfil */
+.card-img-top {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Redondear la imagen de Sebastián que no tenía la clase de Bootstrap en el HTML */
+img[src*="sebastian"] {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ==========================================================================
+   5. SOPORTE DE GRID PERSONALIZADA (.col-lg-2-4)
+   ========================================================================== */
+/* Permite que las 5 tarjetas se distribuyan de forma equidistante en pantallas grandes */
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+/* ==========================================================================
+   6. FOOTER Y DETALLES FINAL
+   ========================================================================== */
+footer a {
+  color: var(--mostaza) !important;
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: var(--crema) !important;
+  text-decoration: underline !important;
+}
+
+/* Selección de texto adaptada a la paleta */
+::selection {
+  background-color: var(--mostaza);
+  color: var(--cafe-oscuro);
+}
