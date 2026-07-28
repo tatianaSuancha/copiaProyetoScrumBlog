@@ -425,3 +425,128 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.quienes-somos-section {
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.quienes-somos-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.valor-card {
+    background-color: var(--fondo-tarjeta);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-top: 4px solid var(--mostaza);
+    border-left: 1px solid rgba(62, 39, 35, 0.08);
+    border-right: 1px solid rgba(62, 39, 35, 0.08);
+    border-bottom: 1px solid rgba(62, 39, 35, 0.08);
+    box-shadow: var(--sombra-card);
+    transition: transform 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-4px);
+}
+
+.valor-card h3 {
+    color: var(--verde-cafe);
+    margin-bottom: 0.5rem;
+}
+
+/* Ajustes para las Cards refactorizadas con Bootstrap */
+.card-img-custom {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .card-img-custom {
+        height: 100%;
+        min-height: 260px;
+    }
+}
+
+.card-post-refactored {
+    border-left: 5px solid var(--rojo-aji) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-post-refactored:hover {
+    transform: translateY(-4px);
+}
+
+/* ==========================================================================
+   ANEXO: ESTILOS DE BOOTSTRAP ADAPTADOS A "QUIÉNES SOMOS"
+   ========================================================================== */
+
+/* Columna personalizada para distribuir a los 5 integrantes */
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+/* Ajustes adicionales para las imágenes de las tarjetas de integrantes */
+.card-img-top,
+img[src*="sebastian"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Redefinición de colores de Bootstrap mediante variables locales */
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.bg-dark {
+  background-color: var(--cafe-oscuro) !important;
+}
+
+.navbar {
+  border-bottom: 3px solid var(--mostaza);
+}
+
+.navbar-brand {
+  font-family: 'Fraunces', serif;
+  color: var(--verde-cafe) !important;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: var(--cafe-oscuro) !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--rojo-aji) !important;
+}
+
+/* Ajustes de footer y selección de texto */
+footer a {
+  color: var(--mostaza) !important;
+}
+
+footer a:hover {
+  color: var(--crema) !important;
+  text-decoration: underline !important;
+}
+
+::selection {
+  background-color: var(--mostaza);
+  color: var(--cafe-oscuro);
+}
