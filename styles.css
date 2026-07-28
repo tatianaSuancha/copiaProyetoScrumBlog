@@ -136,7 +136,7 @@ main {
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
-  color: var(--cafe-oscuro);
+  color: var(--verde-cafe);
 }
 
 .hero p {
@@ -204,21 +204,23 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, var(--verde-cafe) 0%, #253d26 100%);
-    color: var(--crema);
+    background: linear-gradient(135deg, var(--mostaza) 0%, #c98c00 100%);
+    color: var(--cafe-oscuro);
     text-align: center;
-    padding: 4rem 1rem;
-    border-bottom: 5px solid var(--mostaza);
+    padding: 3rem 1.5rem;
+    border-radius: 16px;
+    border-bottom: 5px solid var(--rojo-aji);
 }
 
-.hero h2 {
-    font-size: 2.5rem;
+.hero h1, .hero h2 {
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
-    color: var(--mostaza);
+    color: var(--cafe-oscuro);
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: var(--cafe-oscuro);
     opacity: 0.95;
 }
 
@@ -423,4 +425,17 @@ body {
 .valor-card h3 {
     color: #2c3e50;
     margin-bottom: 0.5rem;
+}
+
+.btn-enviar {
+    background-color: var(--mostaza);
+    border-color: var(--mostaza);
+    color: var(--cafe-oscuro);
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background-color: #c98c00;
+    border-color: #c98c00;
+    color: var(--cafe-oscuro);
 }
