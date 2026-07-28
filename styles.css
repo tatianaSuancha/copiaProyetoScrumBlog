@@ -27,7 +27,7 @@ h1, h2, h3 {
   position: sticky; 
   top: 0;
   z-index: 100;
-  background-color: var(--cafe-oscuro);
+  background-color: var(--verde-cafe);
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
@@ -73,7 +73,7 @@ h1, h2, h3 {
 
 
 .main-nav a.active {
-  border-bottom: 2px solid var(--rojo-aji);
+  border-bottom: 2px solid var(--crema);
   color: var(--mostaza);
 }
 
@@ -106,7 +106,7 @@ h1, h2, h3 {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: var(--cafe-oscuro);
+    background-color: var(--verde-cafe);
     position: absolute;
     top: 100%;
     left: 0;
@@ -191,7 +191,7 @@ body {
 
 .nav-principal a {
     text-decoration: none;
-    color: var(--cafe-oscuro);
+    color: var(--crema);
     font-weight: 600;
     padding: 0.5rem 0;
     transition: color 0.3s ease;
@@ -423,4 +423,8 @@ body {
 .valor-card h3 {
     color: #2c3e50;
     margin-bottom: 0.5rem;
+}
+
+.gmail {
+    color: var(--crema);
 }
