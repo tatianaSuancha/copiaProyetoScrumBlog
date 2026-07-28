@@ -1,9 +1,21 @@
-:root{
- --crema: #FBF3E7;
-  --mostaza: #E3A008;
-  --rojo-aji: #B33A3A;
-  --verde-cafe: #3B5D3C;
-  --cafe-oscuro: #3E2723;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Variables de Bootstrap */
+    --bs-body-font-family: 'Poppins', sans-serif;
+    --bs-primary: #c8582c;        
+    --bs-primary-rgb: 200, 88, 44;
+    --bs-secondary: #e9a13b;     
+    --bs-success: #557c3e;        
+
+    /* Variables de color de Las Delicias Colombianas */
+    --cafe-oscuro: #3e2723;
+    --mostaza: #e9a13b;
+    --crema: #fdfaf6;
+    --verde-cafe: #2e4a32;
+    --rojo-aji: #c8582c;
+    --fondo-tarjeta: #ffffff;
+    --sombra-card: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 * {
@@ -14,7 +26,7 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  background-color: var(--crema);
+  background-color:#b59e69;
   color: var(--cafe-oscuro);
 }
 
@@ -136,7 +148,7 @@ main {
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
-  color: var(--cafe-oscuro);
+  color: var(--verde-cafe);
 }
 
 .hero p {
@@ -204,21 +216,23 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, var(--verde-cafe) 0%, #253d26 100%);
-    color: var(--crema);
+    background: linear-gradient(135deg, var(--mostaza) 0%, #c98c00 100%);
+    color: var(--cafe-oscuro);
     text-align: center;
-    padding: 4rem 1rem;
-    border-bottom: 5px solid var(--mostaza);
+    padding: 3rem 1.5rem;
+    border-radius: 16px;
+    border-bottom: 5px solid var(--rojo-aji);
 }
 
-.hero h2 {
-    font-size: 2.5rem;
+.hero h1, .hero h2 {
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
-    color: var(--mostaza);
+    color: var(--cafe-oscuro);
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: var(--cafe-oscuro);
     opacity: 0.95;
 }
 
@@ -373,7 +387,7 @@ body {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .card-post,
     .card-post:nth-child(even) {
         flex-direction: column;
@@ -413,10 +427,10 @@ body {
 }
 
 .valor-card {
-    background-color: #ffffff;
+    background-color: #cc0e0e;
     padding: 1.5rem;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #d60b0b;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
@@ -425,6 +439,41 @@ body {
     margin-bottom: 0.5rem;
 }
 
+<<<<<<< HEAD
 .gmail {
     color: var(--crema);
+=======
+.btn-enviar {
+    background-color: var(--mostaza);
+    border-color: var(--mostaza);
+    color: var(--cafe-oscuro);
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background-color: #c98c00;
+    border-color: #c98c00;
+    color: var(--cafe-oscuro);
+}
+
+/* Ajustes para las Cards refactorizadas con Bootstrap */
+.card-img-custom {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .card-img-custom {
+        height: 100%;
+        min-height: 260px;
+    }
+}
+
+.card-post-refactored {
+    border-left: 5px solid var(--rojo-aji) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-post-refactored:hover {
+    transform: translateY(-4px);
+>>>>>>> a366019b7b51bfade544de9c7adfbc4888fa3e84
 }
