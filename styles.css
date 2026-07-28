@@ -27,7 +27,7 @@ h1, h2, h3 {
   position: sticky; 
   top: 0;
   z-index: 100;
-  background-color: var(--cafe-oscuro);
+  background-color: var(--verde-cafe);
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
@@ -106,7 +106,7 @@ h1, h2, h3 {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: var(--cafe-oscuro);
+    background-color: var(--verde-cafe);
     position: absolute;
     top: 100%;
     left: 0;
