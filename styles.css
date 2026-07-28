@@ -439,10 +439,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-<<<<<<< HEAD
-.gmail {
-    color: var(--crema);
-=======
 .btn-enviar {
     background-color: var(--mostaza);
     border-color: var(--mostaza);
@@ -475,5 +471,4 @@ body {
 
 .card-post-refactored:hover {
     transform: translateY(-4px);
->>>>>>> a366019b7b51bfade544de9c7adfbc4888fa3e84
 }
